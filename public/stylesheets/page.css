@@ -1,0 +1,269 @@
+body {
+    background-color : #F5F6F8;
+}
+
+#signin_page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    margin: 0;
+}
+
+.form-group {
+    width: 20em;
+}
+
+.btn.btn-primary{
+    width: 100%;
+}
+
+.btn.btn-primary.first{
+    margin-top: 1.5em;
+}
+
+#signup_page {
+    display: none;
+}
+
+article {
+    width: 30%;
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    border:solid 1px #E4E4E4;
+}
+
+p {
+    margin-top : 0;
+}
+.error {
+    margin-top: 0;
+    color: red;
+    font-size: 10px;
+}
+
+.pass {
+    margin-top: 0;
+    color: #03C75B;
+    font-size: 10px;
+}
+
+
+.text_input:focus {
+    outline: none !important;
+    border:2px solid #03C75B;
+}
+
+select {
+    border:solid 1px #E4E4E4;
+}
+
+header {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0.3em;    
+    margin-top: 1.5em;
+}
+
+#title {
+    text-align: center;
+    color: #03C75B;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#birthday {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday_data {
+    width : 30%;
+    height: 2.5em;
+}
+
+#gender_input {
+    width: 100%;
+    height: 2.5em;
+}
+
+#interest_div {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    min-height: 2.5em;
+    border:solid 1px #E4E4E4;
+    flex-wrap: wrap;
+    cursor: text;
+}
+
+.interest_tag {
+    margin-top: 3px;
+    margin-right: 2px;
+    background-color:#F5F6F8;
+    border:solid 1px #E4E4E4;
+    color : rgb(95, 95, 95);
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-radius: 5px;
+    height: 2.5em;
+}
+
+
+#interest_input {
+    height: 2.5em;
+    border: 0;
+    width: 4em;
+}
+
+.delete_button{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    color : rgb(95, 95, 95);
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#agreement_article {
+    display: flex;
+}
+#agreement_button {
+    outline: none;
+    border: 0;
+    text-align: left;
+    font-size: 11px;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 9.5em;
+    background-color: #F5F6F8;
+}
+
+input[type=checkbox] {
+    margin-top: 7px;
+    width: 1em;
+    height: 1em;
+}
+
+#button_article {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
+
+.button_input {
+    width : 48%;
+    height: 2.5em;
+    background-color: rgb(86, 167, 86);
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+.button_input:hover, #reset_cancle_button:hover, #reset_ok_button:hover {
+    background-color:  rgb(56, 109, 56);
+}
+
+#terms_popup_div {
+    display: none;
+    border:solid 2px #E4E4E4;
+    background-color:#F5F6F8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 45em;
+    height: 20em;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#turning_back_button {
+    outline: none;
+    background-color: #F5F6F8; 
+    width: 2em;
+    height: 2em;
+    border: 0;
+    float: right;
+    font-weight: bold;
+}   
+
+#terms_popup_title {
+    display: block;
+    margin: 3em 0em 1.5em 4em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#agreement_textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+#terms_popup_agreement_button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: rgb(168, 192, 168);
+    color: white;
+    border: 0;
+    outline: none;
+    width: 10em;
+}
+
+#reset_div, #alert_div {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px #E4E4E4;
+    background-color:#F5F6F8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 10em;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#reset_span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#reset_cancle_button, #reset_ok_button, #alert_ok_button {
+    background-color: #03C75B;
+    color: white;
+    border: 0;
+    outline: none;
+    width: 8em;
+    margin : 4px;
+    margin-top : 1.5em;
+}
+
+
+#main_page {
+    display: none;
+}
