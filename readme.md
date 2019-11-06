@@ -5,5 +5,5 @@
 boost camp에서 구현한 코드를 개인의 public repo로 옮김
 
 ## 배포
-- ncloud 사용
+- heroku 사용
 - 주소 : http://membership-login-jina.herokuapp.com/
